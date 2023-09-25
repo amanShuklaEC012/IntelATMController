@@ -22,6 +22,15 @@ module authentication(
   output reg [3:0] accIndex
 );
 
+  module faceRecognition(
+  input [width-1:0] image,
+  input [7:0] faceFeatures,
+  output wire recognized
+);
+  // Your face recognition logic here
+  // This module takes an image as input and outputs whether a face is recognized.
+  // Implement the necessary image processing and algorithms here.
+endmodule
 
   reg [11:0] acc_database [0:9];
   reg [3:0] pin_database [0:9];
